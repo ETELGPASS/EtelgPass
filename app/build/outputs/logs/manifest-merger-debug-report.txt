@@ -1,0 +1,152 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:1-32:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\3e8f3a67d268438e4bff2ed20e8514f2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\1f3b2ce4caaf22b6ae3df1e004f81fc6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\50354a22dc753c898cf0a2ecb6ec9dbb\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\a5e4aa8f3ea7fed3dbe26e4e1801b1ff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\b23e94e2c7481760a1972daa9df813c6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\4f3ad9d91bddd5e7207b5c5fac23f729\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\974ddacb8acca16497e1245936a2a3d7\AndroidManifest.xml:2:1-11:12
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\33d87dc1caf4a83a8ce871d52b9100d2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\4a7c014591dad120c80c06a94a472988\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\4df45604fd661c58d05ac0dcd8ec74c4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\bb966219a808abe3ad45687ddc21bb2d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b405dca6651c73bd50624371b339afb5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\a774374ef26922506d9fac4ecb28e031\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\ff628ab79298d7738ab665a8c19b0371\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\7c12e9ab20781bb5f2d831b3108fe586\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d2ad45650516226df72bc96a886502b0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\001afda88fceabfeee330b17ca013b15\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\809cef64ab378967bdd123895f1f7e70\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e5cc02f288a6ec386f2741554f37f128\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:1-32:12
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:1-32:12
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:5:5-83
+	android:name
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:6:5-95
+	android:name
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:6:22-76
+application
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:8:5-30:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\50354a22dc753c898cf0a2ecb6ec9dbb\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\50354a22dc753c898cf0a2ecb6ec9dbb\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\974ddacb8acca16497e1245936a2a3d7\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\974ddacb8acca16497e1245936a2a3d7\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\33d87dc1caf4a83a8ce871d52b9100d2\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\33d87dc1caf4a83a8ce871d52b9100d2\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.example.android.tccdesign.MainActivity
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:15:9-19:20
+	android:screenOrientation
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:18:13-49
+	android:label
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:17:13-45
+	android:name
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:16:13-41
+activity#com.example.android.tccdesign.settingActivity
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:20:9-22:52
+	android:screenOrientation
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:22:13-49
+	android:name
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:21:13-44
+activity#com.example.android.tccdesign.LoginActivity
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:23:9-29:20
+	android:screenOrientation
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:24:13-49
+	android:name
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:23:19-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:25:13-28:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml:27:27-74
+uses-sdk
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\3e8f3a67d268438e4bff2ed20e8514f2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\3e8f3a67d268438e4bff2ed20e8514f2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\1f3b2ce4caaf22b6ae3df1e004f81fc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\1f3b2ce4caaf22b6ae3df1e004f81fc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\50354a22dc753c898cf0a2ecb6ec9dbb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\50354a22dc753c898cf0a2ecb6ec9dbb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\a5e4aa8f3ea7fed3dbe26e4e1801b1ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\a5e4aa8f3ea7fed3dbe26e4e1801b1ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\b23e94e2c7481760a1972daa9df813c6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\b23e94e2c7481760a1972daa9df813c6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\4f3ad9d91bddd5e7207b5c5fac23f729\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\4f3ad9d91bddd5e7207b5c5fac23f729\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\974ddacb8acca16497e1245936a2a3d7\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\974ddacb8acca16497e1245936a2a3d7\AndroidManifest.xml:7:5-43
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\33d87dc1caf4a83a8ce871d52b9100d2\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\33d87dc1caf4a83a8ce871d52b9100d2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\4a7c014591dad120c80c06a94a472988\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\4a7c014591dad120c80c06a94a472988\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\4df45604fd661c58d05ac0dcd8ec74c4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\4df45604fd661c58d05ac0dcd8ec74c4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\bb966219a808abe3ad45687ddc21bb2d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\bb966219a808abe3ad45687ddc21bb2d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b405dca6651c73bd50624371b339afb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b405dca6651c73bd50624371b339afb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\a774374ef26922506d9fac4ecb28e031\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\a774374ef26922506d9fac4ecb28e031\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\ff628ab79298d7738ab665a8c19b0371\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\ff628ab79298d7738ab665a8c19b0371\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\7c12e9ab20781bb5f2d831b3108fe586\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\7c12e9ab20781bb5f2d831b3108fe586\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d2ad45650516226df72bc96a886502b0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d2ad45650516226df72bc96a886502b0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\001afda88fceabfeee330b17ca013b15\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\001afda88fceabfeee330b17ca013b15\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\809cef64ab378967bdd123895f1f7e70\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\809cef64ab378967bdd123895f1f7e70\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e5cc02f288a6ec386f2741554f37f128\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\richa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e5cc02f288a6ec386f2741554f37f128\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\richa\Downloads\Backup Mac-20180630T163617Z-001\Backup Mac\TCCdesign-2\app\src\main\AndroidManifest.xml
