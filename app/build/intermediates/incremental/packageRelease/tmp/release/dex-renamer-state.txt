@@ -1,4 +1,4 @@
-#Tue Jun 26 00:07:27 BRT 2018
-base.0=/Users/richard/Downloads/TCCdesign-2/app/build/intermediates/transforms/dexMerger/release/0
+#Thu Jul 26 23:26:41 BRT 2018
+base.0=/home/richard/Documents/TCCdesign/app/build/intermediates/transforms/dexMerger/release/0
 path.0=classes.dex
 renamed.0=classes.dex

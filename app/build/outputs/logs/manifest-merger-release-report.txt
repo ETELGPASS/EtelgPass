@@ -1,148 +1,205 @@
 -- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:18:9-26:20
+	android:grantUriPermissions
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:22:13-47
+	android:authorities
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:20:13-60
+	android:exported
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:19:13-67
 manifest
-ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:1-31:12
-MERGED from [com.android.support:design:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/38b98f2904ec428064c25e196a07f599/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bf1d0a7e48605fb8fd6844e9fd0e5172/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c8577a51bdf9ac189fa0c1e7a49ad9a8/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/84b31f8d83da8844a154755bffdcd867/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/022a1c2f205a1d136b65c32e249fd7e3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/695d41a91863fcbc88dcfeb4347cf5ea/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.volley:volley:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/d4fcef2a1820d49d27fd00791ebd145f/AndroidManifest.xml:2:1-11:12
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/ea0444008d399ddf2f81cc992538f151/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/c783d1b524af81f19d720e4b7486221d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/a7e1ee8b4a5b8e12c3ecb60b74e93521/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/80a57a7f6878f1a7b4b3fcb83720f2c0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/060f407ba6109178e3d8a96b8896f04a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/7c8f29fb45cc4cb1a99fdb87cd764895/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/dc845d41b75e2d44baadee663dd23022/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/862599d11f361174f75f965376483cd7/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/8e4e230bd87a5eadb5c49b9f888ae559/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/7f2e6fa8d7a00b5c2f58639f7a820106/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/be72727f8088648ef8c220246a4a377c/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b55f514a8a4dfff26208b8739dbb41d5/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:1-31:12
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:1-53:12
+MERGED from [com.android.support:design:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/9cca679c40a1d9614754888cdb89e1fd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/03212dc72bef251b8f4d0f10a95c5f09/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/919155132978a3868e600e4ca47ed21d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7f629487a9251bea67a6fef335aa474f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/7914381a7f001f65ceac0859f8fb97b7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/afb3e344f23a4a3503585ba764aedccc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0f2cfc8d7127c86e7dd0bd050b1ae378/AndroidManifest.xml:2:1-11:12
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/2bd0902806739fa8abdc64c2b6e58466/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/f27cf41efb6188c65ab2b8b20f1370b1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/richard/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/710411131ac83868ce5bfeefbaf8af8c/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/50d17fd393f2e934a3034d92fdc79b11/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/67f72b53200795315a604725b572afa7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/65c6b80ebc087172d2a26671c7eff29f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/9918eeeecafd55f7cde173f260cf423c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/bf7994b7fc091a42bda3425a240bcb22/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/0bdb95ec6e4b1612c079a5e7b719d8f9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/14d1baebc042601b213174e6ff6abef6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/fbe916a27e6b87c17684d122f7e210cd/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/fb48f96f838535bb0cf3f3d9411a9fb6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b78f0a26d4dafa855dc49df432179e98/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/50a3176abb482d25bb723a24c382e1ef/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:1-53:12
 	package
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:3:5-44
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:3:5-44
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:1-31:12
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:1-53:12
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:1-31:12
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:1-53:12
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:5:5-83
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:8:5-83
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:8:22-80
 application
-ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:7:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c8577a51bdf9ac189fa0c1e7a49ad9a8/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c8577a51bdf9ac189fa0c1e7a49ad9a8/AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/d4fcef2a1820d49d27fd00791ebd145f/AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/d4fcef2a1820d49d27fd00791ebd145f/AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/ea0444008d399ddf2f81cc992538f151/AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/ea0444008d399ddf2f81cc992538f151/AndroidManifest.xml:9:5-20
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:10:5-51:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/919155132978a3868e600e4ca47ed21d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/919155132978a3868e600e4ca47ed21d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0f2cfc8d7127c86e7dd0bd050b1ae378/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0f2cfc8d7127c86e7dd0bd050b1ae378/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/2bd0902806739fa8abdc64c2b6e58466/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/2bd0902806739fa8abdc64c2b6e58466/AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:16:9-40
 activity#com.example.android.tccdesign.MainActivity
-ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:14:9-18:20
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:28:9-31:52
 	android:screenOrientation
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:17:13-49
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:31:13-49
 	android:label
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:16:13-45
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:30:13-45
 	android:name
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:15:13-41
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:29:13-41
 activity#com.example.android.tccdesign.settingActivity
-ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:19:9-21:52
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:32:9-34:52
 	android:screenOrientation
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:21:13-49
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:34:13-49
 	android:name
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:20:13-44
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:33:13-44
 activity#com.example.android.tccdesign.LoginActivity
-ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:22:9-28:20
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:35:9-37:52
 	android:screenOrientation
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:23:13-49
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:37:13-49
 	android:name
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:22:19-48
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:36:13-42
+activity#com.example.android.tccdesign.splash_screen
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:38:9-46:20
+	android:screenOrientation
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:40:13-49
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:39:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:24:13-27:29
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:41:13-45:29
 action#android.intent.action.MAIN
-ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:25:17-69
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:25:25-66
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:26:17-77
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:44:27-74
+activity#com.example.android.tccdesign.CadActivity
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:47:9-49
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:47:19-46
+activity#com.example.android.tccdesign.CadNsaActivity
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:48:9-52
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:48:19-49
+activity#com.example.android.tccdesign.CadEteActivity
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:49:9-52
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:49:19-49
+activity#com.example.android.tccdesign.LoginNSAActivity
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:50:9-63
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:50:19-51
 uses-sdk
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/38b98f2904ec428064c25e196a07f599/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/38b98f2904ec428064c25e196a07f599/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bf1d0a7e48605fb8fd6844e9fd0e5172/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bf1d0a7e48605fb8fd6844e9fd0e5172/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c8577a51bdf9ac189fa0c1e7a49ad9a8/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/c8577a51bdf9ac189fa0c1e7a49ad9a8/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/84b31f8d83da8844a154755bffdcd867/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/84b31f8d83da8844a154755bffdcd867/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/022a1c2f205a1d136b65c32e249fd7e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/022a1c2f205a1d136b65c32e249fd7e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/695d41a91863fcbc88dcfeb4347cf5ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/695d41a91863fcbc88dcfeb4347cf5ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.volley:volley:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/d4fcef2a1820d49d27fd00791ebd145f/AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/d4fcef2a1820d49d27fd00791ebd145f/AndroidManifest.xml:7:5-43
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/ea0444008d399ddf2f81cc992538f151/AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/ea0444008d399ddf2f81cc992538f151/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/c783d1b524af81f19d720e4b7486221d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/c783d1b524af81f19d720e4b7486221d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/a7e1ee8b4a5b8e12c3ecb60b74e93521/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/a7e1ee8b4a5b8e12c3ecb60b74e93521/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/80a57a7f6878f1a7b4b3fcb83720f2c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/80a57a7f6878f1a7b4b3fcb83720f2c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/060f407ba6109178e3d8a96b8896f04a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/060f407ba6109178e3d8a96b8896f04a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/7c8f29fb45cc4cb1a99fdb87cd764895/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/7c8f29fb45cc4cb1a99fdb87cd764895/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/dc845d41b75e2d44baadee663dd23022/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/dc845d41b75e2d44baadee663dd23022/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/862599d11f361174f75f965376483cd7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/richard/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/862599d11f361174f75f965376483cd7/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/8e4e230bd87a5eadb5c49b9f888ae559/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/8e4e230bd87a5eadb5c49b9f888ae559/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/7f2e6fa8d7a00b5c2f58639f7a820106/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/7f2e6fa8d7a00b5c2f58639f7a820106/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/be72727f8088648ef8c220246a4a377c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/be72727f8088648ef8c220246a4a377c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b55f514a8a4dfff26208b8739dbb41d5/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b55f514a8a4dfff26208b8739dbb41d5/AndroidManifest.xml:20:5-44
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/9cca679c40a1d9614754888cdb89e1fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/9cca679c40a1d9614754888cdb89e1fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/03212dc72bef251b8f4d0f10a95c5f09/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/03212dc72bef251b8f4d0f10a95c5f09/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/919155132978a3868e600e4ca47ed21d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /home/richard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/919155132978a3868e600e4ca47ed21d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7f629487a9251bea67a6fef335aa474f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7f629487a9251bea67a6fef335aa474f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/7914381a7f001f65ceac0859f8fb97b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/7914381a7f001f65ceac0859f8fb97b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/afb3e344f23a4a3503585ba764aedccc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/afb3e344f23a4a3503585ba764aedccc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0f2cfc8d7127c86e7dd0bd050b1ae378/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0f2cfc8d7127c86e7dd0bd050b1ae378/AndroidManifest.xml:7:5-43
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/2bd0902806739fa8abdc64c2b6e58466/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/2bd0902806739fa8abdc64c2b6e58466/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/f27cf41efb6188c65ab2b8b20f1370b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/f27cf41efb6188c65ab2b8b20f1370b1/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/richard/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/710411131ac83868ce5bfeefbaf8af8c/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/richard/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/710411131ac83868ce5bfeefbaf8af8c/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-fragment:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/50d17fd393f2e934a3034d92fdc79b11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/50d17fd393f2e934a3034d92fdc79b11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/67f72b53200795315a604725b572afa7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/67f72b53200795315a604725b572afa7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/65c6b80ebc087172d2a26671c7eff29f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/65c6b80ebc087172d2a26671c7eff29f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/9918eeeecafd55f7cde173f260cf423c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/9918eeeecafd55f7cde173f260cf423c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/bf7994b7fc091a42bda3425a240bcb22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/bf7994b7fc091a42bda3425a240bcb22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/0bdb95ec6e4b1612c079a5e7b719d8f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/0bdb95ec6e4b1612c079a5e7b719d8f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/14d1baebc042601b213174e6ff6abef6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/richard/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/14d1baebc042601b213174e6ff6abef6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/fbe916a27e6b87c17684d122f7e210cd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/fbe916a27e6b87c17684d122f7e210cd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/fb48f96f838535bb0cf3f3d9411a9fb6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/fb48f96f838535bb0cf3f3d9411a9fb6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b78f0a26d4dafa855dc49df432179e98/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b78f0a26d4dafa855dc49df432179e98/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/50a3176abb482d25bb723a24c382e1ef/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/richard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/50a3176abb482d25bb723a24c382e1ef/AndroidManifest.xml:20:5-44
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/richard/Downloads/TCCdesign-2/app/src/main/AndroidManifest.xml
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+		INJECTED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:23:13-25:57
+	android:resource
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:25:17-55
+	android:name
+		ADDED from /home/richard/Documents/TCCdesign/app/src/main/AndroidManifest.xml:24:17-67

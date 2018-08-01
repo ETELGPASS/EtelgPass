@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\richa\\Downloads\\Backup Mac-20180630T163617Z-001\\Backup Mac\\TCCdesign-2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/home/richard/Documents/EtelgPass/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\richa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\1f3b2ce4caaf22b6ae3df1e004f81fc6\\res\\values-v23\\values-v23.xml",
+                    "source": "/home/richard/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/f27cf41efb6188c65ab2b8b20f1370b1/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "2646",
+                        "endLines": "39",
+                        "endColumns": "12",
+                        "endOffsets": "2791"
+                    }
+                },
+                {
+                    "source": "/home/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/03212dc72bef251b8f4d0f10a95c5f09/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

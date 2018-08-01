@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/richard/Downloads/TCCdesign-2/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/richard/Documents/TCCdesign/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/richard/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/dc845d41b75e2d44baadee663dd23022/res/values-v24/values-v24.xml",
+                    "source": "/home/richard/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/0bdb95ec6e4b1612c079a5e7b719d8f9/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bf1d0a7e48605fb8fd6844e9fd0e5172/res/values-v24/values-v24.xml",
+                    "source": "/home/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/03212dc72bef251b8f4d0f10a95c5f09/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

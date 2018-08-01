@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -51,17 +50,17 @@
         android:paddingBottom="@dimen/activity_horizontal_margin">
 
         <Switch
-            android:id="@+id/switchNotification"
+            android:id="@+id/switchUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notificações"
+            android:text="Atualizar com dados móveis"
             android:textSize="20dp"
             android:thumbTint="#00c667" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="As notificações avisam quando cada aula começa"
+            android:text="Permite fazer atualizações com dados móveis (3G)"
             android:textColor="@color/tab_disable"
             android:textSize="16dp" />
     </LinearLayout>

@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">EtecPass</string>
+    <string name="app_name">EtelgPass</string>
     <string name="title_home">Carteirinha</string>
     <string name="title_Notas">Notas</string>
-    <string name="title_Horarios">Horario</string>
+    <string name="title_Horarios">Secretaria</string>
+    <string name="title_Secretaria">Secretaria</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

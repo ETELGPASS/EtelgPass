@@ -31,39 +31,40 @@ public class WordAdapter extends ArrayAdapter<Word>{
                 }
             }
 
-            TextView materiaTextView = (TextView) listItemView.findViewById(R.id.text_materia);
-            TextView nota1TextView = (TextView) listItemView.findViewById(R.id.text_nota1);
-            TextView nota2TextView = (TextView) listItemView.findViewById(R.id.text_nota2);
-            TextView nota3TextView = (TextView) listItemView.findViewById(R.id.text_nota3);
-            TextView nota4TextView = (TextView) listItemView.findViewById(R.id.text_nota4);
-            TextView diaTextView = (TextView) listItemView.findViewById(R.id.text_dia);
-            TextView aula1TextView = (TextView) listItemView.findViewById(R.id.text_aula1);
-            TextView aula2TextView = (TextView) listItemView.findViewById(R.id.text_aula2);
-            TextView aula3TextView = (TextView) listItemView.findViewById(R.id.text_aula3);
-            TextView aula4TextView = (TextView) listItemView.findViewById(R.id.text_aula4);
-            TextView aula5TextView = (TextView) listItemView.findViewById(R.id.text_aula5);
-            TextView aula6TextView = (TextView) listItemView.findViewById(R.id.text_aula6);
-            TextView aula7TextView = (TextView) listItemView.findViewById(R.id.text_aula7);
-            TextView aula8TextView = (TextView) listItemView.findViewById(R.id.text_aula8);
-            TextView aula9TextView = (TextView) listItemView.findViewById(R.id.text_aula9);
-            TextView prof1TextView = (TextView) listItemView.findViewById(R.id.text_prof1);
-            TextView prof2TextView = (TextView) listItemView.findViewById(R.id.text_prof2);
-            TextView prof3TextView = (TextView) listItemView.findViewById(R.id.text_prof3);
-            TextView prof4TextView = (TextView) listItemView.findViewById(R.id.text_prof4);
-            TextView prof5TextView = (TextView) listItemView.findViewById(R.id.text_prof5);
-            TextView prof6TextView = (TextView) listItemView.findViewById(R.id.text_prof6);
-            TextView prof7TextView = (TextView) listItemView.findViewById(R.id.text_prof7);
-            TextView prof8TextView = (TextView) listItemView.findViewById(R.id.text_prof8);
-            TextView prof9TextView = (TextView) listItemView.findViewById(R.id.text_prof9);
-            TextView sala1TextView = (TextView) listItemView.findViewById(R.id.text_sala1);
-            TextView sala2TextView = (TextView) listItemView.findViewById(R.id.text_sala2);
-            TextView sala3TextView = (TextView) listItemView.findViewById(R.id.text_sala3);
-            TextView sala4TextView = (TextView) listItemView.findViewById(R.id.text_sala4);
-            TextView sala5TextView = (TextView) listItemView.findViewById(R.id.text_sala5);
-            TextView sala6TextView = (TextView) listItemView.findViewById(R.id.text_sala6);
-            TextView sala7TextView = (TextView) listItemView.findViewById(R.id.text_sala7);
-            TextView sala8TextView = (TextView) listItemView.findViewById(R.id.text_sala8);
-            TextView sala9TextView = (TextView) listItemView.findViewById(R.id.text_sala9);
+            TextView materiaTextView = listItemView.findViewById(R.id.text_materia);
+            TextView nota1TextView = listItemView.findViewById(R.id.text_nota1);
+            TextView nota2TextView = listItemView.findViewById(R.id.text_nota2);
+            TextView nota3TextView = listItemView.findViewById(R.id.text_nota3);
+            TextView nota4TextView = listItemView.findViewById(R.id.text_nota4);
+            TextView faltaTextView = listItemView.findViewById(R.id.text_Falta);
+            TextView diaTextView = listItemView.findViewById(R.id.text_dia);
+            TextView aula1TextView = listItemView.findViewById(R.id.text_aula1);
+            TextView aula2TextView = listItemView.findViewById(R.id.text_aula2);
+            TextView aula3TextView = listItemView.findViewById(R.id.text_aula3);
+            TextView aula4TextView = listItemView.findViewById(R.id.text_aula4);
+            TextView aula5TextView = listItemView.findViewById(R.id.text_aula5);
+            TextView aula6TextView = listItemView.findViewById(R.id.text_aula6);
+            TextView aula7TextView = listItemView.findViewById(R.id.text_aula7);
+            TextView aula8TextView = listItemView.findViewById(R.id.text_aula8);
+            TextView aula9TextView = listItemView.findViewById(R.id.text_aula9);
+            TextView prof1TextView = listItemView.findViewById(R.id.text_prof1);
+            TextView prof2TextView = listItemView.findViewById(R.id.text_prof2);
+            TextView prof3TextView = listItemView.findViewById(R.id.text_prof3);
+            TextView prof4TextView = listItemView.findViewById(R.id.text_prof4);
+            TextView prof5TextView = listItemView.findViewById(R.id.text_prof5);
+            TextView prof6TextView = listItemView.findViewById(R.id.text_prof6);
+            TextView prof7TextView = listItemView.findViewById(R.id.text_prof7);
+            TextView prof8TextView = listItemView.findViewById(R.id.text_prof8);
+            TextView prof9TextView = listItemView.findViewById(R.id.text_prof9);
+            TextView sala1TextView = listItemView.findViewById(R.id.text_sala1);
+            TextView sala2TextView = listItemView.findViewById(R.id.text_sala2);
+            TextView sala3TextView = listItemView.findViewById(R.id.text_sala3);
+            TextView sala4TextView = listItemView.findViewById(R.id.text_sala4);
+            TextView sala5TextView = listItemView.findViewById(R.id.text_sala5);
+            TextView sala6TextView = listItemView.findViewById(R.id.text_sala6);
+            TextView sala7TextView = listItemView.findViewById(R.id.text_sala7);
+            TextView sala8TextView = listItemView.findViewById(R.id.text_sala8);
+            TextView sala9TextView = listItemView.findViewById(R.id.text_sala9);
 
             if(currentWord.hasMateria()){
                 materiaTextView.setText(currentWord.getMateria());
@@ -71,6 +72,7 @@ public class WordAdapter extends ArrayAdapter<Word>{
                 nota2TextView.setText(currentWord.getNota2());
                 nota3TextView.setText(currentWord.getNota3());
                 nota4TextView.setText(currentWord.getNota4());
+                faltaTextView.setText(currentWord.getFalta());
             }
             else {
                 diaTextView.setText(currentWord.getDia());

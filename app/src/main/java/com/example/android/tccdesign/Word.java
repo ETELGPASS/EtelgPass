@@ -6,17 +6,19 @@ public class Word {
     private String mNota2;
     private String mNota3;
     private String mNota4;
+    private String mFalta;
     private String mDia;
     private String mAula1, mAula2, mAula3, mAula4, mAula5, mAula6, mAula7, mAula8, mAula9;
     private String mProf1, mProf2, mProf3, mProf4, mProf5, mProf6, mProf7, mProf8, mProf9;
     private String mSala1, mSala2, mSala3, mSala4, mSala5, mSala6, mSala7, mSala8, mSala9;
 
-    public Word(String materia, String nota1, String nota2, String nota3, String nota4) {
+    public Word(String materia, String nota1, String nota2, String nota3, String nota4, String falta) {
         mMateria = materia;
         mNota1 = nota1;
         mNota2 = nota2;
         mNota3 = nota3;
         mNota4 = nota4;
+        mFalta = falta;
     }
     public Word(String dia, String aula1, String prof1, String sala1, String aula2, String prof2, String sala2,
     String aula3, String prof3, String sala3, String aula4, String prof4, String sala4, String aula5, String prof5, String sala5,
@@ -50,6 +52,10 @@ public class Word {
 
     public String getNota4() {
         return mNota4;
+    }
+
+    public String getFalta() {
+        return mFalta;
     }
 
     public String getDia() {return mDia;}

@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -17,36 +16,17 @@ import java.util.ArrayList;
  */
 public class NotasFragment extends Fragment {
 
-    Aluno aluno = new Aluno();
-    public String[] Disciplina = new String[20];
-    public String[] Professor = new String[20];
-    public String[] Conceito1 = new String[20];
-    public String[] Conceito2 = new String[20];
-    public String[] Conceito3 = new String[20];
-    public String[] Conceito4 = new String[20];
-    public String[] ConceitoFinal = new String[20];
-    public String[] PorcentagemFaltas = new String[20];
-    int i;
+    Classe classe = new Classe();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_notas, container, false);
 
-        Disciplina = getArguments().getStringArray("Disciplina");
-        Professor = getArguments().getStringArray("Professor");
-        Conceito1 = getArguments().getStringArray("Conceito1");
-        Conceito2 = getArguments().getStringArray("Conceito2");
-        Conceito3 = getArguments().getStringArray("Conceito3");
-        Conceito4 = getArguments().getStringArray("Conceito4");
-        ConceitoFinal = getArguments().getStringArray("ConceitoFinal");
-        PorcentagemFaltas = getArguments().getStringArray("PorcentagemFaltas");
-        i = getArguments().getInt("Contador");
-
         final ArrayList<Word> words = new ArrayList<Word>();
-        for(int j = 0; j < i; j++)
+        for (int j = 0; j < Classe.getC(); j++)
         {
-            words.add(new Word(Disciplina[j], Conceito1[j], Conceito2[j], Conceito3[j], Conceito4[j]));
+            words.add(new Word(classe.getDisciplina()[j], classe.getConceito1()[j], classe.getConceito2()[j], classe.getConceito3()[j], classe.getConceito4()[j], classe.getPorcentagemFaltas()[j] + "%"));
         }
         /*
         words.add(new Word("Matemática", "R", "MB", "B", "B"));
@@ -60,7 +40,7 @@ public class NotasFragment extends Fragment {
         */
 
         WordAdapter adapter = new WordAdapter(getActivity(), words);
-        ListView nota = (ListView) rootView.findViewById(R.id.notas);
+        ListView nota = rootView.findViewById(R.id.notas);
         nota.setAdapter(adapter);
         return rootView;
     }

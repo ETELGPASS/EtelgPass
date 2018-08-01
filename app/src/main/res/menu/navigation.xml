@@ -17,6 +17,6 @@
         android:id="@+id/action_horarios"
         android:checked="false"
         android:icon="@drawable/clock_icon_24dp"
-        android:title="@string/title_Horarios"
+        android:title="@string/title_Secretaria"
         app:showAsAction="ifRoom" />
 </menu>

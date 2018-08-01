@@ -1,13 +1,24 @@
 package com.example.android.tccdesign;
 
+import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.DownloadManager;
 import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.FileProvider;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,14 +35,31 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+
 public class LoginActivity extends Activity {
 
     private RequestQueue mQueue;
-    Aluno aluno = new Aluno();
-    Button btn_Logar;
+    final BroadcastReceiver onComplete = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (DownloadManager.ACTION_DOWNLOAD_COMPLETE.equals(intent.getAction())) {
+                openFile();
+            }
+        }
+    };
+    Classe classe = new Classe();
     EditText txt_RM;
-    public static final String PREFS_NAME = "MyPrefsFile";
+    Button btn_Logar, btn_NSA;
+    AlertDialog dialog;
+    boolean UpdateMobile;
+    DownloadManager downloadManager;
+    AlertDialog.Builder builder;
+
     Intent intent;
+    ProgressDialog progressDialog;
+    Intent intent1;
+    Intent intent2;
 
     public String[] Disciplina = new String[20];
     public String[] Professor = new String[20];
@@ -42,18 +70,61 @@ public class LoginActivity extends Activity {
     public String[] ConceitoFinal = new String[20];
     public String[] PorcentagemFaltas = new String[20];
     int i;
+    Intent intent_classe;
+
+    public static boolean isOnline(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        return netInfo != null && netInfo.isConnected();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        int REQUEST_CODE = 1;
+
+        ActivityCompat.requestPermissions(this, new String[]{
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+        }, REQUEST_CODE);
+
+        downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+        // registramos nosso BroadcastReceiver
+        registerReceiver(onComplete, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
+
+        SharedPreferences prefs = getSharedPreferences(Classe.NOME_PREFERENCE, MODE_PRIVATE);
+        UpdateMobile = prefs.getBoolean("UpdateMobile", true);
+
+        builder = new AlertDialog.Builder(getApplicationContext());
+// Add the buttons
+        builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked OK button
+
+            }
+        });
+        builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User cancelled the dialog
+                Toast.makeText(getApplicationContext(), "Atualização cancelada", Toast.LENGTH_LONG).show();
+            }
+        });
+// Set other dialog properties
+        builder.setMessage("Deseja Atualizar?")
+                .setTitle("Atualização Disponível");
+// Create the AlertDialog
+        dialog = builder.create();
+
         mQueue = Volley.newRequestQueue(this);
 
         intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent1 = new Intent(getApplicationContext(), CadActivity.class);
+        intent2 = new Intent(getApplicationContext(), LoginNSAActivity.class);
 
-        btn_Logar = (Button)findViewById(R.id.buttonLogin);
-        txt_RM = (EditText) findViewById(R.id.editText_RM);
+        btn_Logar = findViewById(R.id.buttonLogin);
+        //btn_NSA = (Button)findViewById(R.id.buttonNSA);
+        txt_RM = findViewById(R.id.editText_RM);
 
         btn_Logar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,19 +132,128 @@ public class LoginActivity extends Activity {
                 Logar(txt_RM.getText().toString());
             }
         });
+
+/*        btn_NSA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NSA();
+            }
+        });*/
+    }
+
+    public void NSA() {
+        startActivity(intent2);
+    }
+
+    public void PerguntarAtualizacao() {
+        AlertDialog.Builder builder;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            builder = new AlertDialog.Builder(LoginActivity.this, android.R.style.Theme_Material_Dialog_Alert);
+        } else {
+            builder = new AlertDialog.Builder(LoginActivity.this);
+        }
+        builder.setTitle("Atualização Disponível")
+                .setMessage("Deseja Atualizar?")
+                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // continue with delete
+                        classe.openURL("https://drive.google.com/uc?authuser=0&id=1oSn9-30J2yzueNj85W95UjgbG292P2dK&export=download", intent_classe, getApplicationContext());
+                        finishAffinity();
+                    }
+                })
+                .setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do nothing
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                        finish();
+                        Toast.makeText(getApplicationContext(), "Atualização cancelada", Toast.LENGTH_LONG).show();
+                    }
+                }).setCancelable(false)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
+
+    private void openFile() {
+        File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+        File file = new File(path, "app_debug.apk");
+        Uri uri = FileProvider.getUriForFile(getApplicationContext(), BuildConfig.APPLICATION_ID + ".provider", file);
+
+
+        Intent install = new Intent(Intent.ACTION_VIEW);
+        install.setDataAndType(uri, "application/vnd.android.package-archive");
+        install.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        startActivity(install);
+        finishAffinity();
+    }
+
+    public void iniciarDownload() {
+        Uri uri = Uri.parse("http://etelgpass.ga/APK/app-debug.apk");
+
+        Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                .mkdirs();
+
+        downloadManager.enqueue(new DownloadManager.Request(uri)
+                .setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE)
+                .setAllowedOverRoaming(false)
+                .setTitle("EtelgPass")
+                .setDescription("Realizando o download.")
+                .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,
+                        "app-debug.apk"));
+    }
+
+    public void Atualizar() {
+        if (Classe.getNetworkClass(getApplicationContext()) == "2G" || Classe.getNetworkClass(getApplicationContext()) == "3G" || Classe.getNetworkClass(getApplicationContext()) == "4G") {
+            if (UpdateMobile == true) {
+                iniciarDownload();
+            } else {
+                AlertDialog.Builder builder;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    builder = new AlertDialog.Builder(LoginActivity.this);
+                } else {
+                    builder = new AlertDialog.Builder(LoginActivity.this);
+                }
+
+                builder.setTitle("Atualização com dados móveis")
+                        .setMessage("Deseja continuar?")
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // continue with delete
+                                iniciarDownload();
+                            }
+                        })
+                        .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // do nothing
+                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                                finish();
+                                Toast.makeText(getApplicationContext(), "Atualização cancelada", Toast.LENGTH_LONG).show();
+                            }
+                        }).setCancelable(false)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .show();
+            }
+        } else {
+            iniciarDownload();
+        }
     }
 
     public void Logar(final String RM)
     {
-        final ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Logando...");
+        progressDialog.setCancelable(false);
         progressDialog.show();
 
         String url = "https://etelg-pass.000webhostapp.com/API-NOTAS/API-ETE/resultado.php?rm=" + RM;
 
         if(isOnline(getApplicationContext()) == false)
         {
-
+            progressDialog.dismiss();
+            Toast.makeText(this, "Sem conexão com a internet. Tente novamente", Toast.LENGTH_LONG).show();
         }
 
         else
@@ -91,6 +271,16 @@ public class LoginActivity extends Activity {
                                 String Curso = jsonObject.getString("Curso");
                                 String Validade = jsonObject.getString("Ano");
                                 String Número = jsonObject.getString("Número");
+                                String Versao = jsonObject.getString("Versão");
+                                String PorcentagemGeral = jsonObject.getString("Porcentagem Geral");
+
+                                classe.setRM(RM);
+                                classe.setNome(Nome);
+                                classe.setSala(Sala);
+                                classe.setCurso(Curso);
+                                classe.setValidade(Validade);
+                                classe.setNumero(Número);
+                                Classe.setPorcentagemGeral(PorcentagemGeral);
 
 
                                 JSONArray jsonArray = response.getJSONArray("Notas");
@@ -109,67 +299,81 @@ public class LoginActivity extends Activity {
                                     PorcentagemFaltas[i] = Notas.getString("porcentagem");
                                 }
 
+                                classe.setDisciplina(Disciplina);
+                                classe.setProfessor(Professor);
+                                classe.setConceito1(Conceito1);
+                                classe.setConceito2(Conceito2);
+                                classe.setConceito3(Conceito3);
+                                classe.setConceito4(Conceito4);
+                                classe.setConceitoFinal(ConceitoFinal);
+                                classe.setPorcentagemFaltas(PorcentagemFaltas);
+                                Classe.setC(i);
+
+                                /*
+                                for(int j = 0; j < i; j++)
+                                {
+
+                                }
+                                */
+
+                                String arrayStr = response.toString();
+
 
                                 if(Nome != "")
                                 {
-                                    Bundle bundle = new Bundle();
-                                    bundle.putString("RM", RM);
-                                    bundle.putString("Nome", Nome);
-                                    bundle.putString("Sala", Sala);
-                                    bundle.putString("Curso", Curso);
-                                    bundle.putString("Validade", Validade);
-                                    bundle.putString("Número", Número);
-                                    bundle.putInt("Contador", i);
-                                    bundle.putStringArray("Disciplina", Disciplina);
-                                    bundle.putStringArray("Professor", Professor);
-                                    bundle.putStringArray("Conceito1", Conceito1);
-                                    bundle.putStringArray("Conceito2", Conceito2);
-                                    bundle.putStringArray("Conceito3", Conceito3);
-                                    bundle.putStringArray("Conceito4", Conceito4);
-                                    bundle.putStringArray("ConceitoFinal", ConceitoFinal);
-                                    bundle.putStringArray("PorcentagemFaltas", PorcentagemFaltas);
-                                    intent.putExtras(bundle);
-                                    progressDialog.dismiss();
-                                    startActivity(intent);
+                                    if (!Versao.equals(Classe.Versao_app)) {
+                                        PerguntarAtualizacao();
+                                    } else {
+                                        SharedPreferences.Editor editor = getSharedPreferences(Classe.NOME_PREFERENCE, MODE_PRIVATE).edit();
+
+                                        editor.putString("RM", RM);
+                                        editor.putString("Nome", Nome);
+                                        editor.putString("Sala", Sala);
+                                        editor.putString("Curso", Curso);
+                                        editor.putString("Validade", Validade);
+                                        editor.putString("Número", Número);
+                                        editor.putInt("Contador", i);
+                                        editor.putString("jsonNotas", arrayStr);
+                                        editor.commit();
+
+                                        progressDialog.dismiss();
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                        startActivity(intent);
+                                        finish();
+                                    }
                                 }
 
                                 else
                                 {
-                                    progressDialog.setMessage("RM Inválido");
-                                    Toast.makeText(getApplicationContext(), "RM Inválido", Toast.LENGTH_LONG).show();
-                                    txt_RM.setText("");
                                     progressDialog.dismiss();
+                                    Toast.makeText(getApplicationContext(), "RM Inválido.", Toast.LENGTH_LONG).show();
+                                    txt_RM.setText("");
                                 }
 
                             } catch (JSONException e) {
-                                progressDialog.setMessage(e.getMessage());
-                                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
                                 progressDialog.dismiss();
+                                Toast.makeText(getApplicationContext(), "RM Inválido. Insira os dados corretamente.", Toast.LENGTH_LONG).show();
                                 txt_RM.setText("");
+                                e.printStackTrace();
                             }
                         }
                     }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     error.printStackTrace();
-                    progressDialog.setMessage(error.getMessage());
-                    Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_LONG).show();
-                    txt_RM.setText("");
                     progressDialog.dismiss();
+                    Toast.makeText(getApplicationContext(), "RM Inválido ou servidor fora do ar. Insira os dados corretamente ou tente mais tarde.", Toast.LENGTH_LONG).show();
+                    txt_RM.setText("");
                 }
             });
-
             mQueue.add(request);
         }
     }
 
-    public static boolean isOnline(Context context) {
-        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo netInfo = cm.getActiveNetworkInfo();
-        if (netInfo != null && netInfo.isConnected())
-            return true;
-        else
-            return false;
+    public void onDestroy() {
+
+        super.onDestroy();
+        unregisterReceiver(onComplete);
     }
 
 }

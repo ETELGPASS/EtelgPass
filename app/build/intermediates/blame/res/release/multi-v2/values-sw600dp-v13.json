@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/richard/Downloads/TCCdesign-2/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/home/richard/Documents/TCCdesign/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/richard/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/38b98f2904ec428064c25e196a07f599/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/richard/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/9cca679c40a1d9614754888cdb89e1fd/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bf1d0a7e48605fb8fd6844e9fd0e5172/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/richard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/03212dc72bef251b8f4d0f10a95c5f09/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
